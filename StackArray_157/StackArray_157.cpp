@@ -68,3 +68,28 @@ int main() {
 		cout << "3. Display\n";
 		cout << "4. Exit\n";
 		cout << "\nEnter yoir choice: ";
+		cin >> ch;
+		switch (ch) {
+		case '1': {
+			s.push();
+			break;
+		}
+		case '2':
+			if (s.empty()) {
+				cout << "\nStack is empty." << endl;
+				break;
+			}
+			s.pop();
+			break;
+		case '3':
+			s.display();
+			break;
+		case '4':
+			return 0;
+		default:
+			cout << "\nInvalis choice" << endl;
+			break;
+		}
+	}
+
+}
